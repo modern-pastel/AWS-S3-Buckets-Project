@@ -31,8 +31,18 @@ Scenario 2: When the user hits “www.xyz.com/b2/bucket2.jpg”, the Cloudfront 
 
 ## Steps
 **1. Create S3 buckets** 
+-To create an S3 bucket you first have to create an Amazon cloud management account. From there, navigate to the top search bar and type in "S3" and click on the application. Then go to Buckets, and click on Create Bucket.<br>
+![Create S3 bucket](https://github.com/user-attachments/assets/a68a11b9-2af4-4f43-a779-5f046280e815)<br>
+
+For this project I created 2 buckets. They are named Taylormade and Callaway. No changes to the bucket settings are necessary for this project.<br>
    
-**2. Create a Cloudfront distribution** 
+**2. Create a CloudFront distribution** 
+-The next step is creating a CloudFront distribution. To do this, go back to the home console. Then in the search bar type in "CloudFront". Click on that application, and then from there click on "Create Distribution". <br>
+![CloudFront](https://github.com/user-attachments/assets/85075471-bf8b-475e-b1dc-cabe378d4383)<br>
+
+-On origin domain, you can find the buckets you made previously. The domain I selected was the Taylormade bucket. For this project I used the legacy access identity, and clicked on the option "Yes update the bucket policy".<br>
+![cloud distribution](https://github.com/user-attachments/assets/acc29bbd-e22d-411b-9cea-b2ba99f8e172) <br>
+
 
 **3. Update origins and behaviors**<br>
 
